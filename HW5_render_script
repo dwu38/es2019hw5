@@ -1,0 +1,25 @@
+#HW5
+#the render-read R script in 20.2
+#Dean Wu
+
+#(Assuming this is the render script in 19.2 - there is no script in 20.2)
+#copied verbatim from http://happygitwithr.com
+
+#' ---
+#' title: "R scripts can be rendered!"
+#' author: "Jenny Bryan"
+#' date: "April 1, 2014"
+#' output: github_document
+#' ---
+#'
+#' Here's some prose in a very special comment. Let's summarize the built-in
+#' dataset `VADeaths`.
+## here is a regular code comment, that will remain as such
+summary(VADeaths)
+
+#' Here's some more prose. I can use usual markdown syntax to make things
+#' **bold** or *italics*. Let's use an example from the `dotchart()` help to
+#' make a Cleveland dot plot from the `VADeaths` data. I even bother to name
+#' this chunk, so the resulting PNG has a decent name.
+#+ dotchart
+dotchart(VADeaths, main = "Death Rates in Virginia - 1940")
